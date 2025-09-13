@@ -1,4 +1,3 @@
-//Borrar comentario.
 
 //Simular como aparecera renderiza (navegador/Chrome ...)
 import { render, screen } from "@testing-library/react";
