@@ -1,6 +1,6 @@
-export const Button = ({onClick, children}) => {
+export const Button = ({onClick, children,...props}) => {
     //desestruturação do props 
 
-    return <button onClick={onClick}>{children}</button>;
+    return <button onClick={onClick}{...props}>{children}</button>;
 };
 

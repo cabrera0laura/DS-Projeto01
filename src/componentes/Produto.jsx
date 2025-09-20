@@ -22,7 +22,9 @@ const [productCount, setProductCount] = useState(1);
             onIncremente={()=>{setProductCount((prev)=> prev + 1);}}
             />
 
-            <Button onClick={()=> {alert(nome + ' - '+ converterValorEmReais(preco))}}>
+            <Button
+            data-testid="add-to-cart-button"
+            onClick={()=> {alert(nome + ' - '+ converterValorEmReais(preco))}}>
                 Adicionar ao carrinho ({productCount} produtos)
             </Button>
         </div>
